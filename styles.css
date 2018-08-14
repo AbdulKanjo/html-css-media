@@ -14,6 +14,16 @@ body {
   align-items: center;
   align-content: center;
 }
+@media (max-width: 300px) {
+  .start {
+    width: 1500px;
+  }
+}
+@media (min-width: 300px) {
+  .start {
+    width: 1500px;
+  }
+}
 .welcome {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -80,6 +90,23 @@ body {
   position: relative;
   left: 400px;
   top: 20px;
+}
+@media (max-width: 300px) {
+  .main-nav {
+    position: relative;
+    left: 50px;
+  }
+}
+@media (min-width: 300px) {
+  .main-nav {
+    position: relative;
+    left: 50px;
+  }
+}
+
+.nav-dec {
+  text-decoration: none;
+  color: white;
 }
 #two {
   height: 770px;
@@ -199,12 +226,12 @@ h3 {
   position: absolute;
   border: 1px solid #999;
   width: 0;
-  height: 156px;
+  height: 236px;
   display: block;
   content: "";
   left: 50%;
   z-index: 1;
-  top: -160px;
+  top: -210px;
   margin-left: -1px;
 }
 .circle-img:first-child:before {
@@ -214,10 +241,47 @@ h3 {
   border-radius: 100%;
   width: 156px;
   height: 156px;
-  margin: 0 0 108px 0;
+  margin: 0 0 -173px 0;
 }
 
 .four-pos {
   position: relative;
   top: 200px;
+}
+.four-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  width: 300px;
+}
+.four-font-size {
+  font-size: 16px;
+}
+
+#one {
+  position: relative;
+  left: 561px;
+  bottom: 72px;
+}
+#two-t {
+  position: relative;
+  left: 1060px;
+  bottom: 45px;
+  height: 304px;
+}
+#three-t {
+  position: relative;
+  left: 561px;
+  bottom: 72px;
+}
+#four-t {
+  position: relative;
+  left: 1060px;
+  bottom: 45px;
+  height: 304px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
